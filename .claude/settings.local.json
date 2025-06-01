@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(uv pip install:*)",
+      "Bash(uv venv:*)",
+      "Bash(source:*)",
+      "Bash(mcp:*)",
+      "Bash(python:*)",
+      "Bash(/opt/homebrew/bin/mcp tools python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp tools python3 src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp tools .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call get_zoom_sites --format pretty .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call get_zoom_rooms --params '{\"site_id\":\"87iUChR1SniA6ebkDv119Q\"}' --format pretty .venv/bin/python src/server.py)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(/opt/homebrew/bin/mcp call resolve_location --params '{\"location_query\":\"SF1\"}' --format pretty .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call resolve_location --params '{\"location_query\":\"DEN1\"}' --format pretty .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call get_zoom_rooms --params '{\"location_query\":\"SF1\"}' --format pretty .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call get_zoom_rooms --params '{\"location_query\":\"SF\"}' .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call get_zoom_rooms --params '{\"location_query\":\"denver\"}' --format pretty .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call get_zoom_rooms --params '{\"location_query\":\"USDEN\"}' --format pretty .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call resolve_location --params '{\"location_query\":\"DEN2\"}' --format pretty .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call get_zoom_rooms --params '{\"location_query\":\"DEN1\"}' --format pretty .venv/bin/python src/server.py)",
+      "Bash(/opt/homebrew/bin/mcp call get_zoom_rooms --params '{\"location_query\":\"DEN2\"}' .venv/bin/python src/server.py)",
+      "Bash(uv run:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(ls:*)",
+      "Bash(git add:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": false
+}
